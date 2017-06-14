@@ -59,9 +59,9 @@ public class TimesSchedulerAdapter extends RecyclerView.Adapter<TimesSchedulerAd
 
         Calendar currentTime = Calendar.getInstance();
         if(currentTime.after(timesList.get(position))){
-            holder.view.setBackgroundColor(context.getColor(android.R.color.darker_gray));
+            holder.view.setBackgroundColor(context.getResources().getColor(android.R.color.darker_gray));
         }else {
-            holder.view.setBackgroundColor(context.getColor(android.R.color.white));
+            holder.view.setBackgroundColor(context.getResources().getColor(android.R.color.white));
         }
 
         holder.view.setOnClickListener(new View.OnClickListener() {
